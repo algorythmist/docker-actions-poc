@@ -1,10 +1,10 @@
 package com.tecacet.redis;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.Test;
 
-import redis.clients.jedis.Jedis;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 
 public class RedisConnectionTest {
 
