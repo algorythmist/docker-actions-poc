@@ -17,8 +17,4 @@ public class RedisConnectionTest {
         assertEquals("I am up!", jedisCache.ping());
     }
 
-    @Test
-    public void ifail() {
-        assertEquals(true, false);
-    }
 }
