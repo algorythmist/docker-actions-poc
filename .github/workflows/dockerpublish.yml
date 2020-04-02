@@ -6,15 +6,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    services:
-      # Label used to access the service container
-      redis:
-        # Docker Hub image
-        image: redis
-        #
-        ports:
-          # Opens tcp port 6379 on the host and service container
-          - 6379:6379
+#    services:
+#      # Label used to access the service container
+#      redis:
+#        # Docker Hub image
+#        image: redis
+#        #
+#        ports:
+#          # Opens tcp port 6379 on the host and service container
+#          - 6379:6379
 
     steps:
       - uses: actions/checkout@v1
@@ -24,9 +24,4 @@ jobs:
           java-version: 1.8
       - name: Build with Maven
         run: mvn clean install
-#  test:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v2
-#      - name: Build the stack
-#        run: docker-compose up -d
+
