@@ -16,4 +16,9 @@ public class RedisConnectionTest {
         //check whether server is running or not
         assertEquals("I am up!", jedisCache.ping());
     }
+
+    @Test
+    public void ifail() {
+        assertEquals(true, false);
+    }
 }
