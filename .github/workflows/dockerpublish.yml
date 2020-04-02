@@ -11,10 +11,16 @@ jobs:
       redis:
         # Docker Hub image
         image: redis
-        #
         ports:
           # Opens tcp port 6379 on the host and service container
           - 6379:6379
+      elasticsearch:
+        # Docker Hub image
+        image: docker.elastic.co/elasticsearch/elasticsearch:7.6.1
+          ports:
+          - 9200:9200
+          options: -e="discovery.type=single-node" --health-cmd="curl http://localhost:9200/_cluster/health" --health-interval=10s --health-timeout=5s --health-retries=10
+
 
     steps:
       - uses: actions/checkout@v1

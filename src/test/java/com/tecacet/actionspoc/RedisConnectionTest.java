@@ -1,8 +1,10 @@
-package com.tecacet.redis;
+package com.tecacet.actionspoc;
 
 
 
 import static org.junit.Assert.assertEquals;
+
+import com.tecacet.actionspoc.JedisCache;
 
 import org.junit.Test;
 

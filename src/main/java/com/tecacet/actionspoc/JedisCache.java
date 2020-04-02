@@ -1,4 +1,4 @@
-package com.tecacet.redis;
+package com.tecacet.actionspoc;
 
 import redis.clients.jedis.Jedis;
 
