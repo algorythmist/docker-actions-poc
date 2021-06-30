@@ -17,15 +17,14 @@ jobs:
 
       elasticsearch:
         # Docker Hub image
-        image: docker.elastic.co/elasticsearch/elasticsearch:7.6.1
+        image: docker.elastic.co/elasticsearch/elasticsearch:7.13.2
         ports:
           - 9200:9200
         options: -e="discovery.type=single-node" --health-cmd="curl http://localhost:9200/_cluster/health" --health-interval=10s --health-timeout=5s --health-retries=10
 
-
     steps:
       - uses: actions/checkout@v1
-      - name: Set up JDK 1.8
+      - name: Set up JDK
         uses: actions/setup-java@v1
         with:
           java-version: 1.8

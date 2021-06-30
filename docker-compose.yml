@@ -1,5 +1,18 @@
 version: '3'
 services:
+  # Label used to access the service container
   redis:
-    container_name: redis-backend
-    image: "redis:alpine"
+    # Docker Hub image
+    image: redis
+    ports:
+      # Opens tcp port 6379 on the host and service container
+      - 6379:6379
+
+  elasticsearch:
+    # Docker Hub image
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.13.2
+    ports:
+      - 9200:9200
+
+
+
