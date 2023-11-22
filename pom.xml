@@ -11,7 +11,7 @@
     <properties>
         <maven.compiler.target>11</maven.compiler.target>
         <maven.compiler.source>11</maven.compiler.source>
-        <elasticsearch.version>7.17.13</elasticsearch.version>
+        <elasticsearch.version>7.17.14</elasticsearch.version>
         <junit.version>4.13.2</junit.version>
         <jedis.version>3.6.1</jedis.version>
     </properties>
